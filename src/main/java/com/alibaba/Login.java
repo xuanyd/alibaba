@@ -32,7 +32,7 @@ public class Login {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.id("J_logname"))).sendKeys(userName);
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.id("J_logpassword"))).sendKeys(password);
 
-        WebElement source = admcDriver.findElement
+        //WebElement source = admcDriver.findElement
 
         /*webDriver.switchTo().frame(0);
         webDriver.findElement(By.id("J_Quick2Static")).click();
