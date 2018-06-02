@@ -15,12 +15,11 @@ public class Login {
 		System.getProperties().setProperty("webdriver.chrome.driver",
 				"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver webDriver = new ChromeDriver();
-		System.out.println("打开浏览器--------------------------------------------------------------------------------------------------------------");
-        String baseUrl = "http://pub.alimama.com/";
+		System.out.println("打开浏览器---------------------");
         webDriver.manage().window().maximize();
-		System.out.println("页面最大化--------------------------------------------------------------------------------------------------------------");
+		System.out.println("页面最大化---------------------");
 		webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        webDriver.get("https://www.alimama.com/member/minilogin.htm?redirect=https://pub.alimama.com&custom_style=alimama");
+        webDriver.get(Utils.getProperty("url"));
         
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, 5);
        /* WebElement webElement = webDriver.findElement(By.id("mx_n_20"));
